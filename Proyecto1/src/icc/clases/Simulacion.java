@@ -1,7 +1,6 @@
 package icc.clases;
 
 import icc.colors.Colors;
-import java.text.DecimalFormat;
 import icc.clases.Modelo;
 
 public class Simulacion{
@@ -14,7 +13,19 @@ public class Simulacion{
     public int[] juegosG;
     public int[] juegosP;
 
-    public void estadisticasBase(int max) {//Metodo para empezar a inicializar los arreglos para cada equipo de acuerdo al numero que ingerso el usuario.
+
+    //Metodos de la clase Simulacion.
+
+    /*
+      Este metodo lo que hace es inicializar los multiples arreglos correspondientes a cada equipo (esto tomando en cuenta 
+      el valor ingresado por el usuario por la cantidad de equipos). Todos los datos de los equipos (sets, anotaciones, etc)
+      seran guardados en un solo arreglo correspondiente dependiendo el dato a guardar, el cual, compartiran todos los equipos
+      y la manera de acceder cada equipo a sus elementos en especifico sera mediante un ciclo for el cual les dara su valor 
+      correspondiente.
+      Cada equipo por default comenzara con valores 0 en todos los aspectos y a medida que el usuario simule el partido y se
+      generen nuevos datos aleatorios, estos seran guardados en estos arreglos.
+    */
+    public void estadisticasBase(int max) {//Metodo para empezar a inicializar los arreglos para cada equipo de acuerdo al numero que ingreso el usuario.
         anotaciones = new int[max];
         aFavor = new int[max];
         enContra = new int[max];
@@ -36,4 +47,4 @@ public class Simulacion{
 
 
 
-} 
+}
