@@ -75,7 +75,10 @@ public class Prueba {
                     break;
                 }
                 case 2: {
-                    
+                    //switch (Dentro de este switch se pondra el caso cuando el torneo ya haya finalizado para mostrar los distintos resultados del 
+                    //torneo){
+
+                  //  }
                     break;
                 }
                 case 0: {

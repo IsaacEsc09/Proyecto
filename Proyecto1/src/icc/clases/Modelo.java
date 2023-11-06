@@ -37,7 +37,7 @@ public class Modelo{
 	*/
 	public void consultar(int max){
         
-        sim.estadisticasBase(max);
+        sim.estadisticas(max);
 
 		for(int i = 0; i<max; i++){
 			Colors.println("ID: " + i, Colors.YELLOW+Colors.HIGH_INTENSITY);

@@ -13,7 +13,6 @@ public class Simulacion{
     public int[] juegosG;
     public int[] juegosP;
 
-
     //Metodos de la clase Simulacion.
 
     /*
@@ -25,7 +24,7 @@ public class Simulacion{
       Cada equipo por default comenzara con valores 0 en todos los aspectos y a medida que el usuario simule el partido y se
       generen nuevos datos aleatorios, estos seran guardados en estos arreglos.
     */
-    public void estadisticasBase(int max) {//Metodo para empezar a inicializar los arreglos para cada equipo de acuerdo al numero que ingreso el usuario.
+    public void estadisticas(int max) {//Metodo para empezar a inicializar los arreglos para cada equipo de acuerdo al numero que ingreso el usuario.
         anotaciones = new int[max];
         aFavor = new int[max];
         enContra = new int[max];
@@ -43,6 +42,15 @@ public class Simulacion{
             juegosG[i] = 0;
             juegosP[i] = 0;
         }
+    }
+
+    public String[][] generarCalendario(int max){
+
+        
+    }
+
+    public void partidosEquipo(){
+
     }
 
 
