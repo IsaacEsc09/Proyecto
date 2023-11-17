@@ -1,7 +1,11 @@
+//Código mio
 package icc.clases;
 
+import java.util.ArrayList;
+import java.util.Random;
 import icc.colors.Colors;
 import icc.clases.Modelo;
+import icc.clases.Calendario;
 
 public class Simulacion{
 
@@ -23,7 +27,9 @@ public class Simulacion{
       correspondiente.
       Cada equipo por default comenzara con valores 0 en todos los aspectos y a medida que el usuario simule el partido y se
       generen nuevos datos aleatorios, estos seran guardados en estos arreglos.
-    */
+
+      @param max Indica ek tamaño que tendran los arreglos en donde se almacenara los datos
+        */
     public void estadisticas(int max) {//Metodo para empezar a inicializar los arreglos para cada equipo de acuerdo al numero que ingreso el usuario.
         anotaciones = new int[max];
         aFavor = new int[max];
@@ -44,15 +50,31 @@ public class Simulacion{
         }
     }
 
-    public String[][] generarCalendario(int max){
 
-        
-    }
-
-    public void partidosEquipo(){
+    public static int Candelarizacion(int max){
 
     }
 
+/*Método para generación de puntuaciones pseudoaleatorias
+**@param Este método no tiene como tal un parámetro fijo, pues lo ideal sería tener como parámetro 2 elementos del arreglo
+equipos para evaluar puntuaciones pseudoaleatorias entre ambos durante 5 rondas
 
+        private static final int PUNTOS_MAXIMOS = 25; // Puntuación máxima 
+        private static final int RONDAS_MAX = 5;
+public static int[] generarPuntuacionesSets() {
+        Random random = new Random();
+        int[] puntuacionesSets = new int[5]; // Considerando un partido a 5 sets máximo
 
+        for (int i = 0; i < puntuacionesSets.length; i++) {
+            if (i == 4) {
+                // Quinto set (si es necesario)
+                puntuacionesSets[i] = random.nextInt(PUNTOS_MAXIMOS - 14) + 15; // Entre 15 y PUNTOS_MAXIMOS
+            } else {
+                puntuacionesSets[i] = random.nextInt(PUNTOS_MAXIMOS + 1); // Entre 0 y PUNTOS_MAXIMOS
+            }
+        }
+
+        return puntuacionesSets;
+    }
+*/
 }

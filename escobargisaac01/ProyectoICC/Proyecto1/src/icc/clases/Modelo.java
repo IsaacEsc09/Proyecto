@@ -1,9 +1,10 @@
+//Código mío
 package icc.clases;
 
-import icc.colors.Colors;
 import java.util.Scanner;
+import icc.colors.Colors;
 import icc.clases.Simulacion;
-
+import icc.clases.Calendario;
 
 public class Modelo{
 
@@ -17,6 +18,9 @@ public class Modelo{
 	  Este metodo almacena los nombres de los equipos en un arreglo de tipo String donde su limite de 
 	  equipos radica en que valor ingreso el usuario al momento de escoger la cantidad de equipos a 
 	  simular.
+
+	  @param max Es el número de equipos que participan en la simulación. Es determinado por el usuario. El metodo no devuelve 
+	  un valor de tipo.
 	*/
 	public void equipos(int max){
         Scanner scn = new Scanner(System.in);
@@ -34,6 +38,8 @@ public class Modelo{
 	  el usuario podra consultar el puntaje de cada equipo, ademas que dentro de este metodo existe otro metodo 
 	  el cual pertene a la clase Simulacion el cual simplemente inicializa los arreglos de cada equipo el cual
 	  depende del valor ingresado por el usuario por la cantidad de equipos.
+	@param max El numero de elementos que tiene cada arreglo el cual servira para acceder al indice y exponer sus puntajes de cada equipo.
+	El metodo no devuelve un valor de tipo.
 	*/
 	public void consultar(int max){
         
